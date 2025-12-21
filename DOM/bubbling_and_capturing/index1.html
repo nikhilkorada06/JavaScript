@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <style>
+   .main-heading{
+      background-color : yellow;
+      color : blue;
+   }
+
+   .title{
+      padding: 10px;
+      border: 2px solid #4CAF50;
+      border-radius: 4px;
+      font-size: 16px;
+
+   }
+   .input1{
+      padding: 10px;
+      border: 2px solid blue;
+      border-radius: 4px;
+      font-size: 16px;
+
+   }
+   </style>
+
+</head>
+
+
+
+<body>
+
+    <h2 class="main-heading">For Bubbling</h2>
+
+    <form id="form" class="title">             <!--grand parent -->
+        Form
+        <div id="div" class="title">           <!--parent-->
+            Div
+            <p id="p" class="title">Para</p>   <!--child-->
+
+            <!--Event bubbing is a process of finding parents, grand parents of a particular child.-->
+       
+        </div>
+
+    </form>
+
+    <br>
+
+    <h2 class="main-heading">For Capturing</h2>
+
+    <form id="form1" class="title"> 
+                    <!--grand parent -->
+        Form
+
+        <div id="div1" class="title">           <!--parent-->
+
+            Div
+            
+            <p id="p1" class="title">Para</p>   <!--child-->
+
+       
+        </div>
+
+    </form>
+
+   <script src="./index1.js"></script>
+
+</body>
+
+</html>

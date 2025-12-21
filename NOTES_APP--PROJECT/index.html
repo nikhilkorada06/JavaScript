@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | NoteIt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body" data-page="home">
+    <header class="heading d-flex">
+        <div class="d-flex align-center gap-sm">
+            <img class="image" src="notes-gif.gif">
+            <h1 class="heading-1">
+                <a class="link" href="/">ByteNotes</a>
+            </h1>
+        </div>
+
+        <nav class="nav d-flex align-center">
+            <ul class="list-non-bullet">
+                <li class="list">
+                    <a href="./index.html" style="font-size:20px" class="link cursor">Home</a>
+                </li>
+                <li class="list">
+                    <a href="./archive.html" style="font-size:20px" class="link cursor">Archive</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container d-flex direction-column align-center relative">
+         <textarea class="text-area title" placeholder="Title"></textarea>
+         <textarea class="text-area note" placeholder="Make a note..."></textarea>
+         <button class="button add-btn d-flex align-center justify-center absolute">
+            <svg  style="height:20px"  xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFFFFF"><path d="M440-120v-320H120v-80h320v-320h80v320h320v80H520v320h-80Z"/>
+              add
+            </svg>
+         </button>
+    </div>
+
+    <div class="notes-display">
+        <div class="pin-title d-none ">Pinned</div>
+        <div class="pinned-notes-container d-flex wrap gap-md">
+                       <!-- Pinned Notes -->
+        </div> 
+
+        <div class="other-title d-none">
+            Un-Pinned
+        </div>
+        
+        <div class="notes-container d-flex wrap gap-md">
+                       <!-- Unpinned Notes-->
+        </div> 
+    </div>
+        <script type="module" src="./main.js"></script>
+
+</body>
+</html>

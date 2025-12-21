@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="./index.js"> </script>
+        <!--We know this attaching is not usually done inside head because if it is placed inside head browser will first download this file so when
+            we open the website it will be blank till the file is downloaded. So we generally put this at last inside body tag.-->
+
+        <!--If we are desprate to use this inside head then we can use Async and Defer-->
+
+    <script defer src="./index1.js"> </script>
+    <script defer src="./index2.js"> </script>
+    <script defer src="./index3.js"> </script>
+        <!--By using defer first it will start downloading the java script file and in parallel it will start painting the HTML code inside browser
+           once the download is completed it will execute this java script file after the completion of HTML file.-->
+        <!--Even if there are multiple defer files then it will download all the files in parallel with painting HTML after completion of painting 
+            It will execute the downloaded files.-->
+
+    <script async src="./index4.js"> </script>
+    <script async src="./index5.js"> </script>
+    <script async src="./index6.js"> </script>
+         <!--This also similar to defer. Here also script file download is initialized in parallel with painting of HTML. But here once the script 
+             is downloaded browser won't wait for completion of HTML. It will start executing script file.-->
+</head>
+
+<body>
+  
+</body>
+</html>

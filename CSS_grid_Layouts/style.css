@@ -1,0 +1,24 @@
+.container{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    grid-template-columns: repeat(3, 150px);
+    grid-template-rows: repeat(3, 150px);
+}
+
+.tile{
+    background-color: skyblue;
+    display: flex;
+    border-radius: 5px;
+        align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    /* aspect-ratio: 1; */
+}
+
+.tile1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
